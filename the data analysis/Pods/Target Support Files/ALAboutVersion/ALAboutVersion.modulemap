@@ -1,0 +1,6 @@
+framework module ALAboutVersion {
+  umbrella header "ALAboutVersion-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,12 @@
+PODS:
+  - ALAboutVersion (1.0.0)
+
+DEPENDENCIES:
+  - ALAboutVersion (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  ALAboutVersion: 26fca1ee7312f4d5b9c2b8b3860aa6d89ea46502
+
+PODFILE CHECKSUM: 6c2b62bef2d3f454af2b04e734d13b118473c5fe
+
+COCOAPODS: 1.2.0
