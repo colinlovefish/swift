@@ -15,6 +15,7 @@
 		7606E8E11EE441D600B1A3CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7606E8DF1EE441D600B1A3CF /* LaunchScreen.storyboard */; };
 		7606E8EC1EE441D600B1A3CF /* the_data_analysisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606E8EB1EE441D600B1A3CF /* the_data_analysisTests.m */; };
 		7606E8F71EE441D600B1A3CF /* the_data_analysisUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606E8F61EE441D600B1A3CF /* the_data_analysisUITests.m */; };
+		762A59991EE6EF2300D671DD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762A59981EE6EF2300D671DD /* FirstViewController.m */; };
 		F59559A38344393AE71F689E /* Pods_the_data_analysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A213832ADAFD1811B5ADB778 /* Pods_the_data_analysis.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,9 @@
 		7606E8F21EE441D600B1A3CF /* the data analysisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the data analysisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7606E8F61EE441D600B1A3CF /* the_data_analysisUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = the_data_analysisUITests.m; sourceTree = "<group>"; };
 		7606E8F81EE441D600B1A3CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		762A59941EE6EF0900D671DD /* the data analysis-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "the data analysis-Bridging-Header.h"; sourceTree = "<group>"; };
+		762A59971EE6EF2300D671DD /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		762A59981EE6EF2300D671DD /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		A213832ADAFD1811B5ADB778 /* Pods_the_data_analysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_the_data_analysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB79D5C3129B629C73CA8CC /* Pods-the data analysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the data analysis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-the data analysis/Pods-the data analysis.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,11 +133,14 @@
 				7606E8D51EE441D600B1A3CF /* AppDelegate.m */,
 				7606E8D71EE441D600B1A3CF /* ViewController.h */,
 				7606E8D81EE441D600B1A3CF /* ViewController.m */,
+				762A59971EE6EF2300D671DD /* FirstViewController.h */,
+				762A59981EE6EF2300D671DD /* FirstViewController.m */,
 				7606E8DA1EE441D600B1A3CF /* Main.storyboard */,
 				7606E8DD1EE441D600B1A3CF /* Assets.xcassets */,
 				7606E8DF1EE441D600B1A3CF /* LaunchScreen.storyboard */,
 				7606E8E21EE441D600B1A3CF /* Info.plist */,
 				7606E8D11EE441D600B1A3CF /* Supporting Files */,
+				762A59941EE6EF0900D671DD /* the data analysis-Bridging-Header.h */,
 			);
 			path = "the data analysis";
 			sourceTree = "<group>";
@@ -235,6 +242,7 @@
 					7606E8CD1EE441D600B1A3CF = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = F63WK7Y6NG;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					7606E8E61EE441D600B1A3CF = {
@@ -354,6 +362,7 @@
 				7606E8D91EE441D600B1A3CF /* ViewController.m in Sources */,
 				7606E8D61EE441D600B1A3CF /* AppDelegate.m in Sources */,
 				7606E8D31EE441D600B1A3CF /* main.m in Sources */,
+				762A59991EE6EF2300D671DD /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,11 +514,15 @@
 			baseConfigurationReference = DAB79D5C3129B629C73CA8CC /* Pods-the data analysis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F63WK7Y6NG;
 				INFOPLIST_FILE = "the data analysis/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yinghu-colin.the-data-analysis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "the data analysis/the data analysis-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -518,11 +531,14 @@
 			baseConfigurationReference = 33C445F4D13702DD98CB6424 /* Pods-the data analysis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F63WK7Y6NG;
 				INFOPLIST_FILE = "the data analysis/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yinghu-colin.the-data-analysis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "the data analysis/the data analysis-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -595,6 +611,7 @@
 				7606E8FD1EE441D600B1A3CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7606E8FE1EE441D600B1A3CF /* Build configuration list for PBXNativeTarget "the data analysisTests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +620,7 @@
 				7606E9001EE441D600B1A3CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7606E9011EE441D600B1A3CF /* Build configuration list for PBXNativeTarget "the data analysisUITests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +629,7 @@
 				7606E9031EE441D600B1A3CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

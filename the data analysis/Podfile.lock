@@ -1,12 +1,20 @@
 PODS:
   - ALAboutVersion (1.0.0)
+  - GrowingIO (0.9.47)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - ALAboutVersion (~> 1.0.0)
+  - GrowingIO
+  - YYKit (~> 1.0.9)
 
 SPEC CHECKSUMS:
   ALAboutVersion: 26fca1ee7312f4d5b9c2b8b3860aa6d89ea46502
+  GrowingIO: f529ec2787cc93da291f52d18517619d67a0bcd1
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 6c2b62bef2d3f454af2b04e734d13b118473c5fe
+PODFILE CHECKSUM: f2d134578cf9609210eb71b2310b0350b4e5e1ca
 
 COCOAPODS: 1.2.0

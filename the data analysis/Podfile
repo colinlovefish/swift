@@ -2,6 +2,8 @@ platform :ios,'8.0'
 use_frameworks!
 def pods
   pod 'ALAboutVersion', '~> 1.0.0'
+  pod 'GrowingIO'
+  pod 'YYKit', '~> 1.0.9'
 
 end
 

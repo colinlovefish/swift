@@ -1,8 +1,10 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/ALAboutVersion"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/ALAboutVersion" "$PODS_CONFIGURATION_BUILD_DIR/YYKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GrowingIO"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/ALAboutVersion/ALAboutVersion.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "ALAboutVersion"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/GrowingIO/GrowingIO-iOS-SDK"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/ALAboutVersion/ALAboutVersion.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/YYKit/YYKit.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GrowingIO"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Growing" -l"icucore" -l"sqlite3" -framework "ALAboutVersion" -framework "CoreLocation" -framework "CoreTelephony" -framework "Foundation" -framework "Security" -framework "SystemConfiguration" -framework "YYKit"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods
